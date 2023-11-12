@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimentos padrão */
+    box-sizing: border-box;
+    /* Garante que a largura e altura incluam borda e preenchimento */
+}
+
+body {
+    font-family: Arial, Arial;
+   /* background-color: #000000;*/
+    margin: 0;
+    /* Remova a margem superior */
+    padding: 0;
+    /* Remova o preenchimento padrão */
+    width: 100%;
+    height: 100%;
+}
+
+.desenvolvido {
+    position: absolute;
+    top: 0; /* Alterado para bottom para posicioná-lo na parte inferior */
+    width: 100%;
+    text-align: center;
+    background-color: #ff6060;
+    padding: 10px 0;
+    font-size: 0.9em;
+    z-index: 999; /* Set a high z-index value to ensure it appears above other elements */
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 0; /* Remova a margem centralizada */
+    padding: 0; /* Remova o preenchimento padrão */
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.form-container,
+.result-container {
+    flex: 1;
+    padding: 24px;
+    height: auto; /* Remova a altura fixa */
+}
+
+.form-container {
+    order: 1;
+    /* Define a ordem para layout flex (1º elemento) */
+}
+
+
+.result-container {
+    margin-top: 300px;
+}
+
+
+/* Estilos para o formulário e seus elementos */
+form label {
+    display: block;
+    /* Faz com que as etiquetas apareçam em uma nova linha */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior entre as etiquetas */
+    font-weight: bold;
+    /* Define a fonte em negrito para as etiquetas */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 50%;
+    /* Define a largura para os campos de entrada */
+    padding: 14px;
+    /* Adiciona preenchimento interno aos campos de entrada */
+    margin-bottom: 16px;
+    /* Adiciona margem inferior entre os campos de entrada */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda de 1px sólida */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados */
+    background-color: #f8f8f8;
+    /* Define a cor de fundo dos campos de entrada */
+    font-size: 18px;
+    /* Define o tamanho da fonte */
+}
+
+input[type="button"] {
+    background-color: #3498DB;
+    /* Define a cor de fundo para o botão */
+    color: #fff;
+    /* Define a cor do texto do botão */
+    padding: 15px 25px;
+    /* Adiciona preenchimento interno ao botão */
+    border: none;
+    /* Remove a borda do botão */
+    border-radius: 4px;
+    /* Adiciona cantos arredondados ao botão */
+    cursor: pointer;
+    /* Muda o cursor ao passar por cima do botão */
+    width: 100%;
+    /* Define a largura total para o botão */
+    margin-top: 3.7%;
+}
+
+input[type="button"]:hover {
+    background-color: #0070cc;
+    /* Altera a cor de fundo ao passar o cursor sobre o botão */
+}
+
+/* Estilos para o cabeçalho com imagem de fundo */
+header {
+    background-image: url("./assets/banner-lubvel.jpg");
+    /* Define a imagem de fundo */
+    background-size: 100% auto;
+    /* Define a largura da imagem para 100% e ajusta a altura automaticamente */
+    background-position: 10px 20px;
+    /* Define a posição da imagem de fundo */
+    height: 50vh;
+    /* Define a altura do cabeçalho como 50% da altura da viewport */
+    display: flex;
+    /* Usa layout flexível para centralizar o conteúdo */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    position: relative;
+    /* Define a posição do cabeçalho como relativa */
+}
+
+header h1 {
+    font-size: 40px;
+    /* Define o tamanho da fonte para o título */
+    color: white;
+    /* Define a cor do texto como branco */
+    position: absolute;
+    /* Define a posição do título como absoluta */
+    top: 100%;
+    /* Centraliza verticalmente */
+    left: 800%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Reposiciona o título no centro */
+}
+
+
+#graxa-ceran {
+    margin-top: -100%;
+    margin-left: 10%;
+    width: 15vw;
+    height: 75vh;
+}
+
+#logo1 {
+    width: 1050px;
+}
+
+
+#imag2 {
+    width: 100px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 13.8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+}
+
+
+#resultados {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: transparent;
+    text-align: center; /* Adicionado para centralizar o texto */
+    top: -200px;
+    position: relative;
+}
+
+
+#resultados h2 {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+#resultados p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+
+#gerar-relatorio {
+    background-color: #3498DB;
+    /* Define a cor de fundo para o botão */
+    color: #fff;
+    /* Define a cor do texto do botão */
+    padding: 15px 25px;
+    /* Adiciona preenchimento interno ao botão */
+    border: none;
+    /* Remove a borda do botão */
+    border-radius: 4px;
+    /* Adiciona cantos arredondados ao botão */
+    cursor: pointer;
+    /* Muda o cursor ao passar por cima do botão */
+    width: 100%;
+
+}
+
+#gerar-relatorio:hover {
+    background-color: #0070cc;
+    /* Altera a cor de fundo ao passar o cursor sobre o botão */
+}
+
+.container {
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+}
+
+.form-image {
+    flex: 1;
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a imagem na segunda parte (aba de resultados) */
+.imagem-resultado {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    /* Define a largura máxima para se ajustar ao contêiner */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+    width: 1200px;
+    /* Defina a largura desejada em pixels */
+}
+
+/* Estilos para as caixas de texto das respostas na Parte 2 */
+#resultados p {
+    font-size: 23px;
+    color: #333;
+    margin-bottom: 2px;
+    padding: 4px;
+    /* Adicione um preenchimento para criar a caixa */
+    border: 1px solid #ccc;
+    /* Adicione uma borda para a caixa */
+    border-radius: 8px;
+    /* Adicione cantos arredondados */
+    background-color: #f8f8f8;
+    /* Cor de fundo da caixa */
+}
+
+#botao-maior {
+    height: 5%;
+
+}
+
+/* Certifique-se de que o contêiner pai da marca d'água tem position: relative; */
+.container-relativo {
+    position: relative;
+    /* outros estilos conforme necessário */
+}
+
+.watermark {
+    position: absolute; 
+    /* Posiciona o elemento de forma absoluta em relação ao seu contêiner pai mais próximo com posição relativa */
+    bottom: 50% !important;
+    /* Posiciona o elemento a 1% do fundo do contêiner pai */
+    left: 50% !important;
+    /* Posiciona o elemento a 65% do lado esquerdo do contêiner pai */
+    transform: translate(-50%, 50%);
+    /* Move o elemento 10% para a direita (em relação ao seu próprio eixo X) e aumenta o tamanho em 50% */
+    z-index: 9999 !important;
+    /* Coloca o elemento acima de outros elementos que tenham um z-index menor do que 50 */
+    width: 1050px !important;
+    /* Define a largura do elemento para 800 pixels */
+    height: 800px !important;
+    /* Define a altura do elemento para 600 pixels */
+    opacity: 0.1 !important;
+    /* Define a opacidade do elemento para 0.1, tornando-o muito transparente */
+}

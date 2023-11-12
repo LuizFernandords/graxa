@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Lubvel Lubrificantes - Distribuidora Autorizada da Total Lubrificantes</title>
+</head>
+
+<body>
+    <div class="desenvolvido">
+        Desenvolvido por Lubvel Lubrificantes Industriais.
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 order-sm-1">
+                <h1>
+                    <img src="./assets/banner-lubvel.jpg" alt="Logo 1" id="logo1" class="img-fluid"/>
+                </h1>
+                <form id="registroForm">
+                    <div class="form-group">
+                        <label for="nomeCliente">Nome do cliente:</label>
+                        <input type="text" class="form-control" id="nomeCliente" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomeEquipamento">Nome do equipamento:</label>
+                        <input type="text" class="form-control" id="nomeEquipamento" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoRolamento">Tipo de rolamento:</label>
+                        <input type="text" class="form-control" id="tipoRolamento" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rpm">RPM (Rotações Por Minuto):</label>
+                        <input type="number" class="form-control" id="rpm" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="temperatura">Temperatura (em Celsius):</label>
+                        <input type="number" class="form-control" id="temperatura" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dExterno">D.Externo (D) (mm):</label>
+                        <input type="number" class="form-control" id="dExterno" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dInterno">D.Interno (d) (mm):</label>
+                        <input type="number" class="form-control" id="dInterno" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="largura">Largura (B) (mm):</label>
+                        <input type="number" class="form-control" id="largura" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="useGraxa">Use 0,002 p/ W33 ou 0,005 p/ demais:</label>
+                        <select id="useGraxa" class="col-sm-6 form-control" required>
+                            <option value="0"></option>
+                            <option value="0.005">0,005</option>
+                            <option value="0.002">0,002</option>
+                        </select>
+                    </div>
+
+                    <input type="button" class="btn btn-primary" value="Calcular" onclick="calcularValorCalculo()" />
+                </form>
+            </div>
+            <div class="col-sm-6 result-container order-sm-2" id="resultados">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
